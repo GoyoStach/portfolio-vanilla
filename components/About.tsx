@@ -18,7 +18,7 @@ function About({}: Props) {
       </h3>
 
       <motion.img
-        src="/logo.png"
+        src="/profilePic.png"
         initial={{
           x: -200,
           opacity: 0
@@ -36,7 +36,23 @@ function About({}: Props) {
           <span className="underline decoration-custom-200">little</span>{' '}
           background
         </h4>
-        <p className="text-base">test</p>
+        <p className="text-base">
+          I am a full stack Lead tech in Keyrus based in Lyon. We are recruiting
+          so feel free to contact me if you ever need more information !<br />
+          <br />
+          I graduated from ISEP (institut supérieur d&apos;électronique de
+          Paris) in 2021, with a specialization in inovation and
+          entrepreneurship.
+          <br />
+          <br />
+          Throughout this 5 years master degree, I did exchanges in theses
+          universities :<br />
+          <br />
+          The Glyndwr Wrexham Univerity, Wales, UK
+          <br />
+          Inha University, Incheon, South Korea
+          <br />I also did an 6 months intership in Singapore
+        </p>
       </div>
     </motion.div>
   )
