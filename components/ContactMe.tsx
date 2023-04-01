@@ -38,14 +38,13 @@ const ContactMe = (props: Props) => {
           <p className=" flex items-center text-custom-100">@GoyoStach</p>
         </div>
         <div className="flex ">
-          <a href="mailto:guillaume.excoffier86@gmail.com">
-            <SocialIcon
-              className="cursor-pointer"
-              network="email"
-              fgColor="#DCD7C9"
-              bgColor="transparent"
-            />
-          </a>
+          <SocialIcon
+            className="cursor-pointer"
+            network="email"
+            fgColor="#DCD7C9"
+            bgColor="transparent"
+          />
+          <a href="mailto:guillaume.excoffier86@gmail.com"></a>
           <p className="flex items-center text-custom-100">
             guillaume.Excoffier86@gmail.com
           </p>
