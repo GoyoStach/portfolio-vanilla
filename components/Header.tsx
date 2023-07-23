@@ -1,23 +1,19 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
+import { slideIn } from '../helper/animations'
 
 type Props = {}
 
 function Header({}: Props) {
   return (
-    <header className="sticky top-0 flex p-5 items-start justify-between max-w-7xl mx-auto z-20">
+    <header className="top-0 flex p-5 items-start justify-between max-w-7xl mx-auto z-20 overflow-hidden">
       <motion.div
-        className="flex flex-row items-center"
-        initial={{ x: -500, opacity: 0, scale: 0.5 }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1
-        }}
-        transition={{
-          duration: 1.5
-        }}
+        key={'left-header'}
+        className="flex flex-row items-center text-custom-100"
+        whileInView={'show'}
+        initial="hidden"
+        variants={slideIn('left', 'Inertia', '0', '1')}
       >
         <SocialIcon
           url="https://github.com/GoyoStach"
@@ -32,16 +28,11 @@ function Header({}: Props) {
       </motion.div>
 
       <motion.div
+        key={'right-header'}
         className="flex flex-row items-center text-custom-100"
-        initial={{ x: 500, opacity: 0, scale: 0.5 }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1
-        }}
-        transition={{
-          duration: 1.5
-        }}
+        whileInView={'show'}
+        initial="hidden"
+        variants={slideIn('right', 'Inertia', '0', '1')}
       >
         <SocialIcon
           className="cursor-pointer"

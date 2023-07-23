@@ -1,18 +1,11 @@
-import {
-  About,
-  ContactMe,
-  Header,
-  Hero,
-  Skills,
-  WorkExperience
-} from '../components'
+import { About, ContactMe, Header, Hero } from '../components'
 
 import Head from 'next/head'
 import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-custom-500 text-white h-screen snap-mandatory snap-y overflow-scroll z-0">
+    <div className="bg-gradient-to-br from-custom-500 to-custom-400 text-white h-screen  overflow-y-scroll z-0 snap-mandatory snap-y">
       <Head>
         <meta
           key={'title'}
@@ -31,44 +24,38 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <Header />
+      <main className="max-w-[1500px] mx-auto ">
+        <section
+          id="hero"
+          className="snap-start"
+        >
+          <Header />
 
-      <section
-        id="hero"
-        className="snap-start"
-      >
-        <Hero />
-      </section>
-      <section
-        id="about"
-        className="snap-center"
-      >
-        <About />
-      </section>
+          <Hero />
+        </section>
+        <section
+          id="about"
+          className="snap-start"
+        >
+          <About />
+        </section>
 
-      <section
-        id="experience"
-        className="snap-center"
-      >
-        <WorkExperience />
-      </section>
+        {/* <section
+            id="skills"
+            className="snap-start"
+          >
+            <Skills />
+          </section> */}
 
-      <section
-        id="skills"
-        className="snap-start"
-      >
-        <Skills />
-      </section>
-
-      <section
-        id="contact"
-        className="snap-start"
-      >
-        <ContactMe />
-      </section>
+        <section
+          id="contact"
+          className="snap-start"
+        >
+          <ContactMe />
+        </section>
+      </main>
     </div>
   )
 }
 
 export default Home
-
