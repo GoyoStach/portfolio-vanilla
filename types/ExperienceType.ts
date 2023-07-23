@@ -5,6 +5,7 @@ export interface Tech {
 }
 
 export interface Experience {
+  id:string
   jobTitle: string
   companyLogo: string
   companyName: string
