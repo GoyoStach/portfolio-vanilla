@@ -172,9 +172,9 @@ const WorkExperience = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen w-full flex relative flex-col text-left md:flex-row max-w-full justify-evenly items-center"
+      className="w-full flex flex-col relative text-left md:flex-row max-w-full justify-evenly items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-custom-100 text-2xl">
+      <h3 className="top-24 uppercase tracking-[20px] text-custom-100 text-2xl">
         Experience
       </h3>
 

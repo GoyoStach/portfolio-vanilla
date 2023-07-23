@@ -29,3 +29,9 @@ Inspo from the great youtube channel of [Sonny](https://www.youtube.com/c/SonnyS
 
 `yarn dev` - To start the project
 
+## TODO
+
+- [x] center section title
+- [ ] Rework totaly experience with metaversemadness style (https://metaverse-madness-site.vercel.app/#explore)
+- [ ] Rework skills to work better in responsive small (768 + is ok)
+- [ ] Contact me should be fine if we fix above issues
