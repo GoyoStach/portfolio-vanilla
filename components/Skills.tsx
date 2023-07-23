@@ -10,9 +10,9 @@ const Skills = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen min-h-screen max-w-7xl w-full flex relative items-center justify-center mx-auto flex-col text-center gap-4"
+      className="min-h-screen flex relative flex-col text-center items-center gap-y-10 p-10 px-2 lg:px-5"
     >
-      <h3 className=" md:absolute top-24 uppercase tracking-[20px] text-custom-100 text-2xl">
+      <h3 className="ml-[20px] uppercase tracking-[20px] text-custom-100 text-2xl text-center">
         Skills
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -20,8 +20,10 @@ const Skills = () => {
         <Backend />
       </div>
 
-      <DevOps />
-      <div className="text-center text-custom-100 border-2 p-2 border-custom-200 rounded-xl ">
+      <div className="snap-start lg:snap-center">
+        <DevOps />
+      </div>
+      <div className="text-center text-custom-100 border-2 p-2 border-custom-200 rounded-xl">
         <p>Advanced: Worked for more than 2 years on this tech</p>
         <p>Intermediate: Worked for arround a 1 year on this tech</p>
         <p>Basic: Able to understand at a business level</p>

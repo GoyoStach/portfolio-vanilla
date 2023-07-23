@@ -1,4 +1,11 @@
-import { About, ContactMe, Experiences, Header, Hero } from '../components'
+import {
+  About,
+  ContactMe,
+  Experiences,
+  Header,
+  Hero,
+  Skills
+} from '../components'
 
 import Head from 'next/head'
 import type { NextPage } from 'next'
@@ -47,12 +54,12 @@ const Home: NextPage = () => {
           <Experiences />
         </section>
 
-        {/* <section
-            id="skills"
-            className="snap-start"
-          >
-            <Skills />
-          </section> */}
+        <section
+          id="skills"
+          className="snap-start"
+        >
+          <Skills />
+        </section>
 
         <section
           id="contact"

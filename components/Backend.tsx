@@ -38,7 +38,7 @@ const techArray: Tech[] = [
 
 const Backend = () => {
   return (
-    <div className=" border-2 border-custom-100 rounded-lg p-2">
+    <div className=" border-2 border-custom-100 rounded-lg p-2 snap-start md:snap-align-none">
       <h2 className="text-2xl text-custom-300 font-bold py-4">Backend</h2>
       <div className="grid grid-cols-2 gap-4 justify-center">
         {techArray.map(tech => {

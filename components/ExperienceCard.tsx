@@ -30,7 +30,7 @@ const ExperienceCard: FC<Props> = ({
       className="absolute w-full h-full object-contain rounded-[24px] bg-custom-100"
     />
     {active !== experience.id ? (
-      <h3 className="font-semibold sm:text-[26px] text-[18px] text-custom-500 absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
+      <h3 className="font-semibold sm:text-[26px] text-[18px] text-custom-500 absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]  w-32 text-center lg:text-justify">
         {experience.companyName}
       </h3>
     ) : (

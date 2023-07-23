@@ -32,6 +32,8 @@ Inspo from the great youtube channel of [Sonny](https://www.youtube.com/c/SonnyS
 ## TODO
 
 - [x] center section title
-- [ ] Rework totaly experience with metaversemadness style (https://metaverse-madness-site.vercel.app/#explore)
-- [ ] Rework skills to work better in responsive small (768 + is ok)
-- [ ] Contact me should be fine if we fix above issues
+- [x] Rework totaly experience with metaversemadness style (https://metaverse-madness-site.vercel.app/#explore)
+- [x] Rework skills to work better in responsive small (768 + is ok)
+  - [ ] Still need to improve on really small devices
+- [x] Contact me should be fine if we fix above issues
+- [ ] Create a dedicated page with each work experience
