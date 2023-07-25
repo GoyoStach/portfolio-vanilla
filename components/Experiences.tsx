@@ -17,16 +17,18 @@ const Experiences = () => {
       <h3 className="ml-[20px] uppercase tracking-[20px] text-custom-100 text-2xl text-center">
         Works
       </h3>
-      <div className="flex lg:flex-row flex-col justify-between gap-5 w-full min-h-[70vh] items-center">
-        {experiences.map((experience, index) => (
-          <ExperienceCard
-            key={experience.id}
-            experience={experience}
-            index={index}
-            active={active}
-            handleClick={setActive}
-          />
-        ))}
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="flex lg:flex-row flex-col justify-between gap-5 w-full h-[70vh] lg:h-[50vh] items-center">
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={experience.id}
+              experience={experience}
+              index={index}
+              active={active}
+              handleClick={setActive}
+            />
+          ))}
+        </div>
       </div>
     </motion.div>
   )

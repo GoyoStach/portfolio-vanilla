@@ -20,25 +20,25 @@ const ExperienceCard: FC<Props> = ({
     className={
       active === experience.id
         ? `relative lg:flex-[2] flex-[5] flex items-center justify-center min-w-[170px] h-full transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`
-        : 'relative lg:flex[1] flex-[1] flex items-center justify-center min-w-[170px] h-full transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer'
+        : 'relative lg:flex[1] flex-[1] flex items-center  justify-center min-w-[170px] h-full transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer'
     }
     onClick={() => handleClick(experience.id)}
   >
     <img
       src={experience.companyLogo}
       alt={experience.companyName}
-      className="absolute w-full h-full object-contain rounded-[24px] bg-custom-100"
+      className="absolute w-full h-full object-contain rounded-[24px]  bg-gradient-to-br from-custom-300 to-custom-400"
     />
     {active !== experience.id ? (
-      <h3 className="font-semibold sm:text-[26px] text-[18px] text-custom-500 absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]  w-32 text-center lg:text-justify">
+      <h3 className="font-semibold sm:text-[26px] text-[18px] text-white lg:text-custom-100 absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]  w-32 text-center lg:text-justify">
         {experience.companyName}
       </h3>
     ) : (
       <motion.div
         variants={fadeIn('up', 'Inertia', '0', '1')}
-        className="absolute bottom-0 p-8 justify-center w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px] space-y-2"
         whileInView={'show'}
         initial="hidden"
+        className=" absolute flex-grow h-full flex bg-[rgba(0,0,0,0.5)] lg:bottom-0 lg:p-8 justify-center lg:w-full flex-col rounded-[24px] lg:space-y-2 lg:h-auto"
       >
         <div
           className={`flex justify-center rounded-[24px] glassmorphism items-center`}
@@ -51,10 +51,10 @@ const ExperienceCard: FC<Props> = ({
             />
           ) : null}
         </div>
-        <p className="font-normal text-[16px] leading-[20px] text-white uppercase">
+        <p className="font-normal text-[16px] leading-[20px] text-custom-100 uppercase">
           {experience.companyName}
         </p>
-        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
+        <h2 className="font-semibold lg:text-[32px] text-[24px] text-custom-100">
           {experience.jobTitle}
         </h2>
         <a

@@ -5,6 +5,7 @@ const TechItem = ({ src, name, level }: Tech) => {
     <div className="flex space-x-2 p-1">
       <img
         src={src}
+        alt={name}
         className="h-10 w-10 object-contain object-center flex my-2"
       />
       <div className="flex flex-col">
