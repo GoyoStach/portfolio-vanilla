@@ -1,8 +1,6 @@
 import React from 'react'
 import { Tech } from '../types/ExperienceType'
 import TechItem from './TechItem'
-import { motion } from 'framer-motion'
-import { zoomIn } from '../helper/animations'
 
 const techArray: Tech[] = [
   { name: 'Typescript', level: 'Advanced', src: '/techLogos/Typescript.svg' },
@@ -45,18 +43,12 @@ const Backend = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center">
         {techArray.map((tech, index) => {
           return (
-            <motion.div
+            <TechItem
               key={tech.name}
-              variants={zoomIn(0, 1)}
-              initial="hidden"
-              whileInView={'show'}
-            >
-              <TechItem
-                level={tech.level}
-                name={tech.name}
-                src={tech.src}
-              />
-            </motion.div>
+              level={tech.level}
+              name={tech.name}
+              src={tech.src}
+            />
           )
         })}
       </div>
