@@ -15,6 +15,11 @@ const techArray: Tech[] = [
     src: '/techLogos/html.png'
   },
   {
+    name: 'Astro',
+    level: 'Advanced',
+    src: '/techLogos/astro.png'
+  },
+  {
     name: 'Vite',
     level: 'Intermediate',
     src: '/techLogos/Vitejs-logo.png'

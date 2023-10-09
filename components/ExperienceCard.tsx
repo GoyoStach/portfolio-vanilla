@@ -27,7 +27,7 @@ const ExperienceCard: FC<Props> = ({
     <img
       src={experience.companyLogo}
       alt={experience.companyName}
-      className="absolute w-full h-full object-contain rounded-[24px]  bg-gradient-to-br from-custom-300 to-custom-400"
+      className="absolute w-full h-full object-contain rounded-[24px]  bg-gradient-to-br from-neutral-400 to-neutral-700"
     />
     {active !== experience.id ? (
       <h3 className="font-semibold sm:text-[26px] text-[18px] text-white lg:text-custom-100 absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]  w-32 text-center lg:text-justify">
